@@ -1,9 +1,10 @@
 fastapi
-uvicorn
-chromadb
-langchain
-langchain-groq         
-langchain-huggingface   
-sentence-transformers   
-langchain-community
+uvicorn[standard]
 python-dotenv
+langchain
+langchain-community
+langchain-groq
+langchain-huggingface
+chromadb
+sentence-transformers
+torch==2.2.2+cpu --index-url https://download.pytorch.org/whl/cpu
