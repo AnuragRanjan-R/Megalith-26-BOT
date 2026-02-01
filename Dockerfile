@@ -62,4 +62,8 @@ USER appuser
 
 EXPOSE 8000
 
+<<<<<<< HEAD
+=======
+# Start the application
+>>>>>>> 45ce9e48f33ec719aa9d95ffc155f4ac0886241d
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
