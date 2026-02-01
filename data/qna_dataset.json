@@ -1,0 +1,80 @@
+{
+  "faq": [
+    {
+      "question": "What is Megalith?",
+      "answer": "Megalith is a national-level civil engineering technical fest organized by IIT Kharagpur, focused on innovation, technical skills, and practical exposure in civil engineering and infrastructure."
+    },
+    {
+      "question": "Why is Megalith organized?",
+      "answer": "Megalith aims to promote innovation in civil and infrastructure engineering, provide hands-on technical exposure, bridge academia and industry, encourage real-world problem-solving, and create a competitive learning environment."
+    },
+    {
+      "question": "Who organizes Megalith?",
+      "answer": "Megalith is organized by students of the Civil Engineering Department at IIT Kharagpur as a large-scale student-driven technical fest."
+    },
+    {
+      "question": "Who can participate in Megalith?",
+      "answer": "Undergraduate students, postgraduate students, civil engineering enthusiasts, industry professionals, and startups in infrastructure and construction technology can participate."
+    },
+    {
+      "question": "What kinds of events are conducted in Megalith?",
+      "answer": "Megalith includes technical competitions, workshops, engineering challenges, and industry interaction sessions."
+    },
+    {
+      "question": "What are Technical Competitions in Megalith?",
+      "answer": "These are core engineering problem-solving events such as structural design challenges, construction planning competitions, simulation-based contests, and infrastructure problem-solving events."
+    },
+    {
+      "question": "What do Workshops in Megalith focus on?",
+      "answer": "Workshops focus on civil engineering software tools, design and analysis tools, emerging construction technologies, and infrastructure modeling and data tools."
+    },
+    {
+      "question": "What are Engineering Challenges?",
+      "answer": "Engineering challenges are hands-on, team-based, time-bound, and application-oriented practical events."
+    },
+    {
+      "question": "What is included under Industry Interaction?",
+      "answer": "Industry interaction includes guest lectures, panel discussions, and technical talks delivered by experts and professionals."
+    },
+    {
+      "question": "What is the scale of Megalith?",
+      "answer": "Megalith is a national-level fest and is considered one of the largest civil engineering technical fests in India."
+    },
+    {
+      "question": "What is the purpose of the Megalith website?",
+      "answer": "The website displays event information, hosts competition and workshop pages, manages registrations, shares schedules and updates, and serves as the official digital platform of the fest."
+    },
+    {
+      "question": "What features does the website include?",
+      "answer": "Features include event listing pages, event detail pages, a registration system, responsive UI, category-wise navigation, and announcement sections."
+    },
+    {
+      "question": "What technologies are used to build the Megalith website?",
+      "answer": "The website is built using Next.js, React, and JavaScript with a component-based architecture and modern UI/UX practices."
+    },
+    {
+      "question": "What teams are involved in organizing Megalith?",
+      "answer": "Teams include the Web Team, Design Team, Event Management Team, Sponsorship Team, and Content Team."
+    },
+    {
+      "question": "What is Anurag Ranjan’s role in Megalith?",
+      "answer": "Anurag Ranjan has served as Associate Member (2023–2024), Web Team Member (2024–2025), and will serve as Web Head, leading the web team and managing website architecture and development."
+    },
+    {
+      "question": "What skills are applied in Megalith web development?",
+      "answer": "Skills include frontend development, React and Next.js development, UI structuring, and website architecture planning."
+    },
+    {
+      "question": "What technical value does Megalith provide?",
+      "answer": "Megalith encourages application of civil engineering concepts, simulates real-world engineering problems, and improves design and analytical skills."
+    },
+    {
+      "question": "What benefits do students gain from Megalith?",
+      "answer": "Students gain hands-on exposure, teamwork experience, competitive learning, and networking opportunities."
+    },
+    {
+      "question": "How is Megalith relevant to industry?",
+      "answer": "Megalith provides exposure to modern tools and technologies, supports industry-academia interaction, and focuses on technology-driven civil engineering solutions."
+    }
+  ]
+}

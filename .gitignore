@@ -107,10 +107,6 @@ bot/chroma_db/
 *.sqlite3
 *.db
 
-# MongoDB (if using local)
-*.mongo
-data/
-
 # ============================================
 # Uploads & User Content
 # ============================================
