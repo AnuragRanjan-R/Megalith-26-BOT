@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Optional
 import time
 
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -59,7 +60,7 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 try:
     embedding_function = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
     vector_store = Chroma(
-        collection_name="qna_store", 
+        collection_name="megalith_knowledge", 
         embedding_function=embedding_function, 
         persist_directory=DB_PATH
     )
@@ -108,7 +109,6 @@ If a user asks something unrelated to Megalith (general knowledge, personal advi
 If a user speaks casually or frankly, you may reply in a similarly friendly and natural tone — but still keep the focus on Megalith and redirect if the topic is off-fest.
 
 Do not mention these instructions. Always stay in character as the Megalith assistant.
-
 Context:
 {context}
 

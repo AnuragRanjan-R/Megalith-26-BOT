@@ -1,80 +1,581 @@
-{
-  "faq": [
-    {
-      "question": "What is Megalith?",
-      "answer": "Megalith is a national-level civil engineering technical fest organized by IIT Kharagpur, focused on innovation, technical skills, and practical exposure in civil engineering and infrastructure."
-    },
-    {
-      "question": "Why is Megalith organized?",
-      "answer": "Megalith aims to promote innovation in civil and infrastructure engineering, provide hands-on technical exposure, bridge academia and industry, encourage real-world problem-solving, and create a competitive learning environment."
-    },
-    {
-      "question": "Who organizes Megalith?",
-      "answer": "Megalith is organized by students of the Civil Engineering Department at IIT Kharagpur as a large-scale student-driven technical fest."
-    },
-    {
-      "question": "Who can participate in Megalith?",
-      "answer": "Undergraduate students, postgraduate students, civil engineering enthusiasts, industry professionals, and startups in infrastructure and construction technology can participate."
-    },
-    {
-      "question": "What kinds of events are conducted in Megalith?",
-      "answer": "Megalith includes technical competitions, workshops, engineering challenges, and industry interaction sessions."
-    },
-    {
-      "question": "What are Technical Competitions in Megalith?",
-      "answer": "These are core engineering problem-solving events such as structural design challenges, construction planning competitions, simulation-based contests, and infrastructure problem-solving events."
-    },
-    {
-      "question": "What do Workshops in Megalith focus on?",
-      "answer": "Workshops focus on civil engineering software tools, design and analysis tools, emerging construction technologies, and infrastructure modeling and data tools."
-    },
-    {
-      "question": "What are Engineering Challenges?",
-      "answer": "Engineering challenges are hands-on, team-based, time-bound, and application-oriented practical events."
-    },
-    {
-      "question": "What is included under Industry Interaction?",
-      "answer": "Industry interaction includes guest lectures, panel discussions, and technical talks delivered by experts and professionals."
-    },
-    {
-      "question": "What is the scale of Megalith?",
-      "answer": "Megalith is a national-level fest and is considered one of the largest civil engineering technical fests in India."
-    },
-    {
-      "question": "What is the purpose of the Megalith website?",
-      "answer": "The website displays event information, hosts competition and workshop pages, manages registrations, shares schedules and updates, and serves as the official digital platform of the fest."
-    },
-    {
-      "question": "What features does the website include?",
-      "answer": "Features include event listing pages, event detail pages, a registration system, responsive UI, category-wise navigation, and announcement sections."
-    },
-    {
-      "question": "What technologies are used to build the Megalith website?",
-      "answer": "The website is built using Next.js, React, and JavaScript with a component-based architecture and modern UI/UX practices."
-    },
-    {
-      "question": "What teams are involved in organizing Megalith?",
-      "answer": "Teams include the Web Team, Design Team, Event Management Team, Sponsorship Team, and Content Team."
-    },
-    {
-      "question": "What is Anurag Ranjan’s role in Megalith?",
-      "answer": "Anurag Ranjan has served as Associate Member (2023–2024), Web Team Member (2024–2025), and will serve as Web Head, leading the web team and managing website architecture and development."
-    },
-    {
-      "question": "What skills are applied in Megalith web development?",
-      "answer": "Skills include frontend development, React and Next.js development, UI structuring, and website architecture planning."
-    },
-    {
-      "question": "What technical value does Megalith provide?",
-      "answer": "Megalith encourages application of civil engineering concepts, simulates real-world engineering problems, and improves design and analytical skills."
-    },
-    {
-      "question": "What benefits do students gain from Megalith?",
-      "answer": "Students gain hands-on exposure, teamwork experience, competitive learning, and networking opportunities."
-    },
-    {
-      "question": "How is Megalith relevant to industry?",
-      "answer": "Megalith provides exposure to modern tools and technologies, supports industry-academia interaction, and focuses on technology-driven civil engineering solutions."
-    }
-  ]
-}
+[
+  {
+    "id": "event_criar",
+    "type": "event",
+    "title": "CRIAR",
+    "aliases": ["CRIAR bridge-building competition", "bridge building competition", "Megalith bridge contest"],
+    "keywords": ["bridge-building", "on-the-spot event", "preliminary round", "final round", "load-bearing capacity", "structural stability", "material optimization", "creativity", "aesthetic appeal"],
+    "entities": ["Megalith", "CRIAR", "bridge model", "preliminary round", "final round", "judges"],
+    "summary": "CRIAR is a team-based, on-the-spot bridge-building competition at Megalith. Teams design a bridge on paper and then construct a physical model using only provided materials.",
+    "details": "CRIAR is a team-based bridge-building competition conducted during Megalith. It is an on-the-spot event where the problem statement is given at the venue. Teams of 2 to 5 members participate, and team members cannot be changed after registration. The event has two rounds: a preliminary round where teams prepare a detailed bridge design on paper, and a final round where shortlisted teams construct a bridge model using only the materials provided. External materials or supports are not allowed. Judging is based on load-bearing capacity, structural stability, material optimization, creativity, and aesthetic appeal. Judges’ decisions are final.",
+    "rules": [
+      "Problem statement is given on the spot at the venue.",
+      "Teams must have 2 to 5 members and cannot change after registration.",
+      "The bridge model must be constructed only with materials provided by the organizers.",
+      "No external materials or supports are allowed."
+    ],
+    "judging_criteria": [
+      "Load-bearing capacity",
+      "Structural stability",
+      "Material optimization",
+      "Creativity",
+      "Aesthetic appeal"
+    ],
+    "team_size": "2-5",
+    "tools_or_materials": "Only materials provided by the organizers.",
+    "disqualifications": [
+      "Use of external materials or supports"
+    ]
+  },
+  {
+    "id": "event_instridge",
+    "type": "event",
+    "title": "Instridge",
+    "aliases": ["arch bridge competition", "arch bridge design event"],
+    "keywords": ["arch bridge", "on-the-spot", "load distribution", "structural stability", "construction time", "innovation", "teamwork", "aesthetics"],
+    "entities": ["Megalith", "Instridge", "arch bridge", "safety rules", "judges"],
+    "summary": "Instridge is an on-the-spot arch bridge design and construction competition. Teams design and build an arch bridge using only organizer-provided materials under strict dimensional and safety rules.",
+    "details": "Instridge is an on-the-spot arch bridge design and construction competition. It is a team event with 2 to 5 members per team, and team composition cannot be changed after registration. Participants design and construct an arch bridge, focusing on efficient load distribution and structural stability. Only materials provided by the organizers may be used, and all specified dimensional and safety rules must be followed. Teams are judged on strength, efficiency, stability, construction time, innovation, teamwork, and aesthetics. Copied designs or unsafe practices lead to penalties or disqualification.",
+    "rules": [
+      "Teams must have 2 to 5 members and cannot change composition after registration.",
+      "Only materials provided by the organizers may be used.",
+      "All specified dimensional and safety rules must be strictly followed."
+    ],
+    "judging_criteria": [
+      "Strength",
+      "Efficiency",
+      "Stability",
+      "Construction time",
+      "Innovation",
+      "Teamwork",
+      "Aesthetics"
+    ],
+    "team_size": "2-5",
+    "tools_or_materials": "Only materials provided by the organizers.",
+    "disqualifications": [
+      "Copied designs",
+      "Unsafe practices"
+    ]
+  },
+  {
+    "id": "event_beat_d_euclid",
+    "type": "event",
+    "title": "BEAT-D-EUCLID",
+    "aliases": ["BEAT D EUCLID", "CAD competition", "AutoCAD 3D modelling contest"],
+    "keywords": ["AutoCAD", "3D model", "orthographic views", "CAD", "dimensional correctness", "visualization"],
+    "entities": ["Megalith", "BEAT-D-EUCLID", "AutoCAD", "3D model"],
+    "summary": "BEAT-D-EUCLID is an individual CAD-based competition using AutoCAD. Participants build a 3D model from given orthographic views within a time limit.",
+    "details": "BEAT-D-EUCLID is an individual, on-the-spot CAD-based competition conducted using AutoCAD. Participants are given top, front, and left-hand side views and must create an accurate 3D model within the given time limit. Participants must bring their own laptops with AutoCAD installed, and no other software or reference drawings are allowed. Judging is based on accuracy, dimensional correctness, command efficiency, visualization skills, and presentation quality. Pre-made models or plagiarism result in disqualification.",
+    "rules": [
+      "The competition is strictly individual.",
+      "Participants must use AutoCAD and bring their own laptops with AutoCAD installed.",
+      "Only the provided orthographic views may be used; no external reference drawings are allowed.",
+      "The model must be completed within the given time limit."
+    ],
+    "judging_criteria": [
+      "Accuracy",
+      "Dimensional correctness",
+      "Command efficiency",
+      "Visualization skills",
+      "Presentation quality"
+    ],
+    "team_size": "Individual",
+    "tools_or_materials": "Participant’s own laptop with AutoCAD installed.",
+    "disqualifications": [
+      "Use of pre-made models",
+      "Plagiarism"
+    ]
+  },
+  {
+    "id": "event_innovators_conclave",
+    "type": "event",
+    "title": "Innovators Conclave",
+    "aliases": ["infrastructure role-playing event", "infrastructure problem-solving event"],
+    "keywords": ["infrastructure", "stakeholders", "problem solving", "presentation", "Q&A"],
+    "entities": ["Megalith", "Innovators Conclave", "stakeholder roles", "presentation"],
+    "summary": "Innovators Conclave is a role-based infrastructure problem-solving event. Teams take on stakeholder roles and present balanced solutions to a given infrastructure challenge.",
+    "details": "Innovators Conclave is a team-based role-playing infrastructure problem-solving event. Teams consist of 4 to 5 members, with each participant assigned a stakeholder role. The task is to analyze a given infrastructure problem and propose a balanced solution considering technical, economic, environmental, and social factors. Teams present their solution in a 5–7 minute presentation followed by a 3–5 minute Q&A session, with one member delivering the conclusion. Judging is based on collaboration, creativity, originality, feasibility, and representation of stakeholder perspectives. Judges’ decisions are final.",
+    "rules": [
+      "Teams must have 4 to 5 members, each assigned a distinct stakeholder role.",
+      "Teams must analyze the given infrastructure problem from multiple perspectives: technical, economic, environmental, and social.",
+      "Presentation duration is 5–7 minutes followed by a 3–5 minute Q&A session.",
+      "One member should deliver the final conclusion of the presentation."
+    ],
+    "judging_criteria": [
+      "Collaboration",
+      "Creativity",
+      "Originality",
+      "Feasibility",
+      "Representation of stakeholder perspectives"
+    ],
+    "team_size": "4-5",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "event_liftovate",
+    "type": "event",
+    "title": "LIFTOVATE",
+    "aliases": ["hydraulic lift challenge", "LIFTOVATE hydraulic event"],
+    "keywords": ["hydraulic lift", "fluid mechanics", "pressure transmission", "model presentation", "stability", "time efficiency"],
+    "entities": ["Megalith", "LIFTOVATE", "hydraulic lifting mechanism", "fluid mechanics"],
+    "summary": "LIFTOVATE is a hydraulic lift engineering challenge for teams. Participants design and demonstrate a hydraulic lifting mechanism without using motors or electrical components.",
+    "details": "LIFTOVATE is a hydraulic lift engineering challenge conducted as an on-the-spot team event. Teams of 4 to 5 members design and demonstrate a hydraulic lifting mechanism based on fluid mechanics and pressure transmission principles. Motors and electrical components are not allowed, and only approved materials may be used. The event includes a model presentation followed by lifting tasks. Evaluation is based on functionality, smooth operation, stability, precision, time efficiency, innovation, and safety. Rule violations lead to disqualification.",
+    "rules": [
+      "Teams must have 4 to 5 members.",
+      "The lifting mechanism must be based on fluid mechanics and pressure transmission principles.",
+      "Motors and electrical components are strictly not allowed.",
+      "Only materials approved or provided by the organizers may be used."
+    ],
+    "judging_criteria": [
+      "Functionality",
+      "Smooth operation",
+      "Stability",
+      "Precision",
+      "Time efficiency",
+      "Innovation",
+      "Safety"
+    ],
+    "team_size": "4-5",
+    "tools_or_materials": "Only organizer-approved materials; no motors or electrical components.",
+    "disqualifications": [
+      "Violation of material restrictions or safety rules"
+    ]
+  },
+  {
+    "id": "event_green_canvas",
+    "type": "event",
+    "title": "The Green Canvas",
+    "aliases": ["Green Canvas", "environmental case study competition"],
+    "keywords": ["sustainability", "case study", "renewable energy", "pollution control", "urban planning", "presentation"],
+    "entities": ["Megalith", "The Green Canvas", "IIT Kharagpur", "abstract submission"],
+    "summary": "The Green Canvas is a team-based environmental case study competition focused on sustainable real-world solutions. It includes abstract submission and a final presentation at IIT Kharagpur.",
+    "details": "The Green Canvas is a team-based environmental case study competition focused on sustainable and real-world solutions. Teams of 2 to 5 members participate in two phases: Phase 1 involves online abstract submission limited to one page, with an additional page allowed for visuals, and Phase 2 consists of a final presentation at IIT Kharagpur. Topics may include renewable energy, pollution control, and urban planning. Judging is based on data usage, analysis, feasibility, innovation, sustainability, and presentation quality. Plagiarism is strictly prohibited.",
+    "rules": [
+      "Teams must have 2 to 5 members.",
+      "Phase 1 requires an online abstract submission limited to one page, with an additional page allowed for visuals.",
+      "Phase 2 consists of a final presentation at IIT Kharagpur.",
+      "Topics should focus on sustainable, real-world environmental or infrastructure solutions."
+    ],
+    "judging_criteria": [
+      "Data usage",
+      "Analysis",
+      "Feasibility",
+      "Innovation",
+      "Sustainability",
+      "Presentation quality"
+    ],
+    "team_size": "2-5",
+    "tools_or_materials": "Digital tools for abstract preparation and presentation materials.",
+    "disqualifications": [
+      "Plagiarism"
+    ]
+  },
+  {
+    "id": "event_model_exhibition",
+    "type": "event",
+    "title": "Model Exhibition",
+    "aliases": ["civil model competition", "model design contest"],
+    "keywords": ["civil engineering model", "design presentation", "innovation", "aesthetics", "feasibility"],
+    "entities": ["Megalith", "Model Exhibition", "civil engineering models"],
+    "summary": "Model Exhibition is a civil engineering model design competition for teams. Participants design and present models based on civil engineering themes using approved materials.",
+    "details": "Model Exhibition is a civil engineering model design competition conducted as a team event with 2 to 5 members per team. Participants design and present models based on civil engineering-related themes. Pre-made models are not allowed, and only approved materials such as wood and cardboard may be used. Teams must explain the concept, technical feasibility, real-world application, and sustainability of their model. Judging is based on innovation, feasibility, detailing, aesthetics, and practicality. Judges’ decisions are final.",
+    "rules": [
+      "Teams must have 2 to 5 members.",
+      "Models must be based on civil engineering-related themes.",
+      "Pre-made models are not allowed.",
+      "Only approved materials such as wood and cardboard may be used."
+    ],
+    "judging_criteria": [
+      "Innovation",
+      "Feasibility",
+      "Detailing",
+      "Aesthetics",
+      "Practicality"
+    ],
+    "team_size": "2-5",
+    "tools_or_materials": "Approved materials such as wood and cardboard; basic model-making tools.",
+    "disqualifications": [
+      "Use of pre-made models",
+      "Use of unapproved materials"
+    ]
+  },
+  {
+    "id": "event_darkode",
+    "type": "event",
+    "title": "Darkode",
+    "aliases": ["Darkode coding contest", "Megalith coding competition"],
+    "keywords": ["competitive programming", "algorithms", "data structures", "time limit", "code optimization"],
+    "entities": ["Megalith", "Darkode", "C", "C++", "Python", "Java"],
+    "summary": "Darkode is a competitive coding contest at Megalith. Participants solve algorithmic and data structure problems individually or in small teams within a strict time limit.",
+    "details": "Darkode is a competitive coding contest conducted during Megalith. Participants can compete individually or in teams of up to three members. Problems are based on algorithms and data structures, and languages such as C, C++, Python, and Java are allowed. The event has a strict time limit, and scoring is based on accuracy, efficiency, and optimized solutions. Plagiarism, AI-generated code, or external help is strictly prohibited and leads to disqualification.",
+    "rules": [
+      "Participants may compete individually or in teams of up to three members.",
+      "Problems are based on algorithms and data structures.",
+      "Allowed languages typically include C, C++, Python, and Java.",
+      "Solutions must be submitted within the specified time limit.",
+      "Use of AI-generated code or external help is strictly prohibited."
+    ],
+    "judging_criteria": [
+      "Accuracy of solutions",
+      "Time efficiency",
+      "Quality and optimization of code"
+    ],
+    "team_size": "1-3",
+    "tools_or_materials": "Laptop with coding environment and internet/platform access as specified by organizers.",
+    "disqualifications": [
+      "Plagiarism",
+      "AI-generated code",
+      "External help or collusion beyond the registered team"
+    ]
+  },
+  {
+    "id": "event_survey_hunt",
+    "type": "event",
+    "title": "Survey Hunt",
+    "aliases": ["survey treasure hunt", "surveying hunt"],
+    "keywords": ["surveying", "navigation", "checkpoints", "time limit", "strategy", "teamwork"],
+    "entities": ["Megalith", "Survey Hunt", "surveying instruments", "checkpoints"],
+    "summary": "Survey Hunt is an on-the-spot treasure hunt based on surveying and navigation skills. Teams use surveying instruments to navigate checkpoints within a time limit.",
+    "details": "Survey Hunt is an on-the-spot team-based treasure hunt event that applies surveying and navigation skills. Teams of 2 to 5 members navigate through multiple checkpoints using only the surveying instruments provided by the organizers. The event has a time limit, and scoring is based on accuracy, time efficiency, strategy, and teamwork. Penalties are imposed for wrong answers, and external help or interference is not allowed. Judges’ decisions are final.",
+    "rules": [
+      "Teams must have 2 to 5 members.",
+      "Teams must use only the surveying instruments provided by the organizers.",
+      "Teams must navigate through multiple checkpoints within the specified time limit.",
+      "External help or interference is not allowed.",
+      "Penalties are imposed for wrong answers."
+    ],
+    "judging_criteria": [
+      "Accuracy",
+      "Time efficiency",
+      "Strategy",
+      "Teamwork"
+    ],
+    "team_size": "2-5",
+    "tools_or_materials": "Surveying instruments provided by the organizers.",
+    "disqualifications": [
+      "Use of external help or interference",
+      "Serious violation of event rules"
+    ]
+  },
+  {
+    "id": "info_megalith_overview",
+    "type": "info",
+    "title": "Megalith Overview",
+    "aliases": ["Megalith fest", "Megalith civil engineering fest"],
+    "keywords": ["civil engineering fest", "technical competitions", "case studies", "model building", "coding contests"],
+    "entities": ["Megalith", "Department of Civil Engineering", "Civil Engineering Society", "IIT Kharagpur"],
+    "summary": "Megalith is the annual civil engineering fest of IIT Kharagpur featuring technical, analytical, and creative events. It provides a platform for students to apply classroom knowledge to real-world problems.",
+    "details": "Megalith is the annual civil engineering fest that hosts a wide range of technical, analytical, and creative events for students. It provides a platform to apply classroom knowledge to real-world engineering problems through competitions, case studies, model building, coding, and quizzes. The theme of Megalith 2024 was 'STHYATITVA – Transforming into a Sustainable World', emphasizing sustainability, innovation, and responsible engineering.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "team_web_2026",
+    "type": "team",
+    "title": "Web Team 2026",
+    "aliases": ["Megalith 2026 Web Team"],
+    "keywords": ["web team", "website", "development", "Megalith 2026"],
+    "entities": ["Web Team", "Rupam Mahato", "Sabavath Dheeraj Chowhan", "Anurag Ranjan", "Durgesh Kumar", "Harshit Kumar Gupta", "Meesala Poojitha Bhanu", "Aditya Khade", "Harsh"],
+    "summary": "The Web Team for Megalith 2026 manages the fest’s online presence and technical web infrastructure. It includes steering committee members, core heads, and core members.",
+    "details": "The Web Team in Megalith 2026 is responsible for managing the fest’s website, online presence, and related technical infrastructure. Steering Committee Members: Rupam Mahato, Sabavath Dheeraj Chowhan. Core Team Heads: Anurag Ranjan, Durgesh Kumar. Core Team Members: Harshit Kumar Gupta, Meesala Poojitha Bhanu, Aditya Khade, Harsh.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "team_events_logistics_2026",
+    "type": "team",
+    "title": "Events and Logistics Team 2026",
+    "aliases": ["Events Team 2026", "Logistics Team 2026"],
+    "keywords": ["events", "logistics", "coordination", "Megalith 2026"],
+    "entities": ["Events and Logistics Team", "Shrewa Shree Konika P Bharati", "Adrij Bhattacharya", "Krupal Thakre", "Penaka Saikeerthana", "Mahith Gudivaka", "Chandaram Mohith"],
+    "summary": "The Events and Logistics Team 2026 handles event execution and on-ground logistics for Megalith. It includes steering committee members, a core head, and core team members.",
+    "details": "The Events and Logistics Team in Megalith 2026 is responsible for planning, coordinating, and executing events along with managing on-ground logistics. Steering Committee Members: Shrewa Shree Konika P Bharati, Adrij Bhattacharya. Core Team Head: Krupal Thakre. Core Team Members: Penaka Saikeerthana, Mahith Gudivaka, Chandaram Mohith.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "team_design_2026",
+    "type": "team",
+    "title": "Design Team 2026",
+    "aliases": ["Megalith 2026 Design Team"],
+    "keywords": ["design", "graphics", "visual identity"],
+    "entities": ["Design Team", "Samprit Saha", "Khushi Kumari", "Amit Yadav", "Abhishek Tanwar", "Namburi Dhanush", "Anjan Kumar"],
+    "summary": "The Design Team 2026 manages the visual identity and design assets of Megalith. It includes steering, core heads, and core members focused on creative output.",
+    "details": "The Design Team in Megalith 2026 is responsible for the fest’s visual identity, graphics, and design assets across print and digital platforms. Steering Committee Member: Samprit Saha. Core Team Heads: Khushi Kumari, Amit Yadav. Core Team Members: Abhishek Tanwar, Namburi Dhanush, Anjan Kumar.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "team_publicity_2026",
+    "type": "team",
+    "title": "Publicity Team 2026",
+    "aliases": ["Megalith 2026 Publicity Team"],
+    "keywords": ["publicity", "outreach", "marketing"],
+    "entities": ["Publicity Team", "Pulivarthi Ephraim EL Raj", "Soubhik Kumar Shaw", "Aryan Raj Chourasia", "Saugata Malakar", "Mayank Goel", "Granth Jain", "Sharad Kumar"],
+    "summary": "The Publicity Team 2026 handles promotional outreach and communication for Megalith. It manages social media promotion, branding, and external visibility.",
+    "details": "The Publicity Team in Megalith 2026 is in charge of promoting the fest, handling outreach, and ensuring strong participation through effective communication. Steering Committee Members: Pulivarthi Ephraim EL Raj, Soubhik Kumar Shaw. Core Team Heads: Aryan Raj Chourasia, Saugata Malakar. Core Team Members: Mayank Goel, Granth Jain, Sharad Kumar.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "team_sponsorship_marketing_2026",
+    "type": "team",
+    "title": "Sponsorship and Marketing Team 2026",
+    "aliases": ["Sponsorship Team 2026", "Marketing Team 2026"],
+    "keywords": ["sponsorship", "marketing", "industry partners"],
+    "entities": ["Sponsorship and Marketing Team", "Soham Mallik", "Sandeep Kumar Meena", "Ayush Chandra Dey", "Ashutosh Palai", "Krrish Garg", "Bollam Pranav", "Umang Singhal"],
+    "summary": "The Sponsorship and Marketing Team 2026 builds and manages industry and brand partnerships for Megalith. It focuses on sponsorship outreach, negotiations, and visibility.",
+    "details": "The Sponsorship and Marketing Team in Megalith 2026 is responsible for securing and maintaining partnerships with sponsors and brand collaborators. Steering Committee Members: Soham Mallik, Sandeep Kumar Meena. Core Team Heads: Ayush Chandra Dey, Ashutosh Palai. Core Team Members: Krrish Garg, Bollam Pranav, Umang Singhal.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_megalith_institute",
+    "type": "info",
+    "title": "Megalith and Organizing Institute",
+    "aliases": ["Megalith organizers", "who organizes Megalith"],
+    "keywords": ["India’s largest civil engineering fest", "Civil Engineering Society", "Department of Civil Engineering", "IIT Kharagpur"],
+    "entities": ["Megalith", "Civil Engineering Society", "Department of Civil Engineering", "IIT Kharagpur"],
+    "summary": "Megalith is India’s largest civil engineering technical fest organized by the Department of Civil Engineering under the Civil Engineering Society at IIT Kharagpur. It offers competitions, problem-solving events, and learning opportunities.",
+    "details": "Megalith is India’s largest civil engineering technical fest, organized by the Department of Civil Engineering under the aegis of the Civil Engineering Society, IIT Kharagpur. It is hosted at the Indian Institute of Technology Kharagpur, the first IIT of the nation, established in 1951. The fest provides a platform for engineering students to test their skills through exciting competitions, real-world problem-solving events, prizes, and learning opportunities in a highly competitive environment.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "program_internship",
+    "type": "program",
+    "title": "Megalith Internship Program",
+    "aliases": ["Megalith intern program", "Megalith campus ambassador"],
+    "keywords": ["internship", "networking", "leadership", "event management", "communication"],
+    "entities": ["Megalith Internship Program", "IIT Kharagpur", "Megalith organizing team"],
+    "summary": "The Megalith Internship Program allows students to work closely with the fest’s organizing team. Interns promote Megalith in their colleges and build networks and leadership skills.",
+    "details": "The Megalith Internship Program offers students an opportunity to work closely with the organizing team of Megalith, the civil engineering fest of IIT Kharagpur. Interns act as a vital link between Megalith and students across various colleges by leveraging their networks, promoting the fest, and fostering collaboration. The program helps interns connect with the IIT Kharagpur community while gaining exposure to event management, communication, and leadership within the civil engineering ecosystem.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "program_internship_incentives",
+    "type": "info",
+    "title": "Megalith Internship Program Incentives",
+    "aliases": ["internship benefits", "Megalith intern perks"],
+    "keywords": ["certificate", "leadership skills", "accommodation", "networking", "LinkedIn endorsements", "merchandise"],
+    "entities": ["Megalith Internship Program", "Head of the Department", "IIT Kharagpur"],
+    "summary": "The Megalith Internship Program offers certificates, leadership opportunities, potential free accommodation, networking, LinkedIn endorsements, and official merchandise as incentives.",
+    "details": "The Megalith Internship Program offers multiple incentives including an official certificate of internship from the Head of the Department, opportunities to develop leadership skills, free accommodation based on performance and registration in Megalith, professional networking across colleges, LinkedIn endorsements for skills, and official Megalith merchandise. These incentives aim to reward performance while enhancing professional growth and visibility.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "program_internship_responsibilities",
+    "type": "rule",
+    "title": "Responsibilities of a Megalith Intern",
+    "aliases": ["Megalith intern responsibilities", "intern duties"],
+    "keywords": ["awareness creation", "promotion", "coordination", "social media"],
+    "entities": ["Megalith Intern", "IIT Kharagpur", "Megalith team"],
+    "summary": "Megalith Interns act as points of contact between Megalith and their colleges. They promote the fest, drive participation, and coordinate related activities.",
+    "details": "A Megalith Intern is responsible for creating awareness about Megalith and IIT Kharagpur by acting as the point of contact between the fest and their college. Interns are expected to leverage their social media networks for fest promotion, work with the Megalith team to ensure quality participation in events, and coordinate with the organizing team to help organize Megalith-related activities within their college.",
+    "rules": [
+      "Act as the primary point of contact between Megalith and the home college.",
+      "Promote Megalith through social media and college networks.",
+      "Encourage and coordinate student participation in Megalith events.",
+      "Help organize Megalith-related activities or sessions within the college."
+    ],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "theme_2024",
+    "type": "info",
+    "title": "Megalith 2024 Theme",
+    "aliases": ["STHYATITVA", "Megalith 2024"],
+    "keywords": ["STHYATITVA", "sustainability", "transforming into a sustainable world"],
+    "entities": ["Megalith 2024", "STHYATITVA"],
+    "summary": "The theme of Megalith 2024 was 'STHYATITVA – Transforming into a Sustainable World', highlighting sustainability in civil engineering.",
+    "details": "The theme of Megalith 2024 was 'STHYATITVA – Transforming into a Sustainable World'. This theme emphasizes the importance of sustainability in civil engineering and encourages participants to innovate and develop solutions that contribute to a more sustainable future.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "theme_2025",
+    "type": "info",
+    "title": "Megalith 2025 Theme",
+    "aliases": ["NIRMANIKA", "Megalith 2025"],
+    "keywords": ["NIRMANIKA", "future urban transportation"],
+    "entities": ["Megalith 2025", "NIRMANIKA"],
+    "summary": "The theme of Megalith 2025 was 'NIRMANIKA' focusing on the future of urban transportation.",
+    "details": "The theme of the Megalith 2025 was 'NIRMANIKA' - The future of urben transportation.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_schedule",
+    "type": "info",
+    "title": "Megalith Schedule",
+    "aliases": ["when is Megalith held", "Megalith dates"],
+    "keywords": ["schedule", "March", "annual fest"],
+    "entities": ["Megalith"],
+    "summary": "Megalith is usually held annually in March, with exact dates announced each year on official channels.",
+    "details": "Megalith is typically held annually in the month of March. The exact dates may vary each year, so it is advisable to check the official Megalith website or announcements for the specific dates of the event.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_registration",
+    "type": "info",
+    "title": "Megalith Event Registration",
+    "aliases": ["how to register for Megalith", "Megalith registration"],
+    "keywords": ["registration", "official website", "deadlines", "eligibility"],
+    "entities": ["Megalith website"],
+    "summary": "Participants can register for Megalith events through the official website’s registration section. Each event lists its own details, links, and deadlines.",
+    "details": "To register for Megalith events, visit the official Megalith website and navigate to the registration section. You will find a list of events along with their details and registration links. Follow the instructions provided for each event to complete your registration. Make sure to check the eligibility criteria and deadlines for registration.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "sponsors_megalith_2024_2025",
+    "type": "sponsor",
+    "title": "Sponsors and Partners of Megalith (2024 & 2025)",
+    "aliases": ["Megalith sponsors", "Megalith partners"],
+    "keywords": ["sponsors", "partners", "Title Sponsor", "Platinum Sponsor", "Gold Sponsor", "Major Sponsors", "Education Partners", "Media Partners"],
+    "entities": ["Elegant Steel", "Tata Steel (Criar)", "S. K. Samanta", "Aimil India", "Unichem", "DCart Logistics (SendFast)", "Enkebee", "Fosroc", "Civil Center", "Civil Guruji", "Gateforum", "Jai Balaji Group", "L&T (Larsen & Toubro)", "HEICO", "SMP Port", "Public Policy and Governance Society", "Civil Centre", "Ease My Trip", "CodeChef", "Coca Cola", "Tea Junction", "The Belgian Waffle", "Wow Momo", "Desi American Style", "ECustkart", "Grabon", "Fliqa India", "Aceonline", "91.9 FM", "FastInfo", "Civil Brains", "Sach Kahoon", "Sachi Shiksha", "Silicon India", "Youth Incorporated", "The Global Hues", "Civil Practical Knowledge", "Civil Engineering Notes", "The Civil Network", "About Civil Engineering", "Civil Concepts", "Civil Engineer DK", "India College Fest"],
+    "summary": "Megalith is supported by a wide range of sponsors and partners across 2024 and 2025, including title, co-title, major, event, education, media, beverage, food, and strategic partners. Key names include Elegant Steel, L&T, Tata Steel (Criar), Aimil India, and many media and knowledge partners.",
+    "details": "For Megalith 2024, the Title Sponsor is Elegant Steel. Platinum Sponsors include Tata Steel (Criar). Gold Sponsors include S. K. Samanta. Major Sponsors include Aimil India and Unichem. Event Sponsors include DCart Logistics (SendFast) and Enkebee. Partners include Fosroc (Constructive Solutions Partner) and Civil Center (Workshop Partner). Education Partners include Civil Guruji and Gateforum. Media Partners include Youth Incorporated, College India Fest, Silicon India, Campus Times Pune, and India Blooms. Other Sponsors include Mera Events (Exclusive Ticket Partner) and Grab On (Coupon Partner). For Megalith 2025, the Title Sponsor is Elegant Steel, and the Co-Title Sponsor is L&T (Larsen & Toubro). The Silver Sponsor is Jai Balaji Group. Major Sponsors include Rashmi Group and Aimil India. The Event Sponsor is Enkebee. The Hydraulics Partner is HEICO. The Strategic Partner is SMP Port. The Event Partner is the Public Policy and Governance Society. The Workshop Partner is Civil Centre. The Travel Partner is Ease My Trip. The Platform Partner is CodeChef. Beverage Partners include Coca Cola and Tea Junction. Food & Snacks Partners include The Belgian Waffle, Wow Momo, and Desi American Style. Other Partners include ECustkart (Merchandise Partner), Grabon (Coupon Partner), Fliqa India (Photography Partner), Aceonline (Growth Partner), 91.9 FM (Radio Partner), FastInfo (Knowledge Partner), and Civil Brains (Digital Outreach Partner). Magazine Partners include Sach Kahoon and Sachi Shiksha. Media Partners include Silicon India, Youth Incorporated, The Global Hues, Civil Practical Knowledge, Civil Engineering Notes, The Civil Network, About Civil Engineering, Civil Concepts, Civil Engineer DK, and India College Fest.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_events_2026",
+    "type": "info",
+    "title": "Megalith 2026 Competitions",
+    "aliases": ["Megalith 2026 events"],
+    "keywords": ["competitions", "Megalith 2026", "events list"],
+    "entities": ["Megalith 2026"],
+    "summary": "Competitions for Megalith 2026 are under finalization, and detailed information will be released soon on official channels.",
+    "details": "The list of competitions for Megalith 2026 is currently being finalized. Detailed information about events, formats, and eligibility will be announced soon. Stay tuned to the official Megalith website and social media channels for updates.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_workshops_2026",
+    "type": "info",
+    "title": "Megalith 2026 Workshops",
+    "aliases": ["workshops in Megalith 2026"],
+    "keywords": ["workshops", "Megalith 2026", "schedule", "registration"],
+    "entities": ["Megalith 2026"],
+    "summary": "Workshops for Megalith 2026 will be announced soon, including topics, speakers, schedules, and registration details.",
+    "details": "Workshop details for Megalith 2026 are coming soon. Information regarding workshop topics, speakers, schedules, and registration will be released shortly on the official website.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_schedule_2026",
+    "type": "info",
+    "title": "Megalith 2026 Schedule",
+    "aliases": ["Megalith 2026 dates", "event schedule 2026"],
+    "keywords": ["schedule", "Megalith 2026", "event dates", "timings"],
+    "entities": ["Megalith 2026"],
+    "summary": "The full schedule for Megalith 2026, including dates, timings, and venues, is being prepared and will be posted on official platforms.",
+    "details": "The complete schedule for Megalith 2026 is under preparation. Event dates, timings, and venue allocations will be updated soon on the Megalith website.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_accommodation_2026",
+    "type": "info",
+    "title": "Megalith 2026 Accommodation",
+    "aliases": ["accommodation for Megalith 2026"],
+    "keywords": ["accommodation", "participants", "booking process"],
+    "entities": ["Megalith 2026"],
+    "summary": "Accommodation information for Megalith 2026 participants will be shared soon, covering availability, eligibility, and booking.",
+    "details": "Accommodation details for Megalith 2026 are coming soon. Information regarding availability, eligibility, and booking process will be announced on the official platform.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_rules_2026",
+    "type": "rule",
+    "title": "Megalith 2026 General Rules and Guidelines",
+    "aliases": ["Megalith 2026 rules"],
+    "keywords": ["rules", "guidelines", "event-specific rules"],
+    "entities": ["Megalith 2026"],
+    "summary": "Detailed event-specific rules and guidelines for Megalith 2026 will be released as official rulebooks for each event.",
+    "details": "Event-specific rules and guidelines for Megalith 2026 are currently being finalized. Complete rulebooks will be published soon for each event.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_venue_2026",
+    "type": "info",
+    "title": "Megalith 2026 Venues",
+    "aliases": ["where is Megalith 2026 held"],
+    "keywords": ["venue", "IIT Kharagpur campus"],
+    "entities": ["Megalith 2026", "IIT Kharagpur"],
+    "summary": "Megalith 2026 events will be hosted across various venues within the IIT Kharagpur campus, with exact locations announced closer to the fest.",
+    "details": "Venue details for Megalith 2026 are coming soon. All events will be hosted within the IIT Kharagpur campus, and exact locations will be shared closer to the fest dates.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  }
+]
