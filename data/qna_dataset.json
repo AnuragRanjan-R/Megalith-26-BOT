@@ -577,5 +577,35 @@
     "team_size": "",
     "tools_or_materials": "",
     "disqualifications": []
+  },
+  {
+    "id": "info_events_overview",
+    "type": "info",
+    "title": "Megalith Events Overview",
+    "aliases": ["Megalith events", "events list", "competitions list", "what events are in Megalith"],
+    "keywords": ["events", "competitions", "list of events", "Megalith events", "Megalith competitions"],
+    "entities": ["Megalith"],
+    "summary": "Megalith features multiple competitions and challenges. Ask for any event by name to get details.",
+    "details": "Current events in the knowledge base include: CRIAR, Instridge, BEAT-D-EUCLID, Innovators Conclave, LIFTOVATE, The Green Canvas, Model Exhibition, Darkode, Survey Hunt. Ask for any event name to get full rules, team size, judging, and materials.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
+  },
+  {
+    "id": "info_teams_overview",
+    "type": "info",
+    "title": "Megalith Teams Overview",
+    "aliases": ["Megalith team", "Megalith teams", "organizing teams", "who are the teams"],
+    "keywords": ["teams", "organizing team", "core team", "Megalith team"],
+    "entities": ["Megalith 2026"],
+    "summary": "Megalith has multiple organizing teams. Ask for a specific team to get full member lists.",
+    "details": "Teams in the knowledge base include: Web Team 2026, Events and Logistics Team 2026, Design Team 2026, Publicity Team 2026, Sponsorship and Marketing Team 2026. Ask for any team name to see members and roles.",
+    "rules": [],
+    "judging_criteria": [],
+    "team_size": "",
+    "tools_or_materials": "",
+    "disqualifications": []
   }
 ]
