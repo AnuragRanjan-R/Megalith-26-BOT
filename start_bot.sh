@@ -5,11 +5,14 @@ echo "  Megalith Chatbot Backend Startup"
 echo "========================================"
 echo ""
 
-# Check if virtual environment exists
+# Check if virtual environment exists, create if not
 if [ ! -f "venv/bin/activate" ]; then
-    echo "[ERROR] Virtual environment not found!"
-    echo "Please run: python3 -m venv venv"
-    exit 1
+    echo "[SETUP] Creating virtual environment..."
+    python3 -m venv venv
+    if [ $? -ne 0 ]; then
+        echo "[ERROR] Failed to create virtual environment!"
+        exit 1
+    fi
 fi
 
 # Activate virtual environment
@@ -25,11 +28,11 @@ else
     echo "[2/4] Dependencies already installed."
 fi
 
-# Check if .env exists in parent directory
-if [ ! -f "../.env" ]; then
+# Check if .env exists
+if [ ! -f ".env" ]; then
     echo ""
-    echo "[WARNING] .env file not found in parent directory!"
-    echo "Please create megalith2026-backend/.env with:"
+    echo "[WARNING] .env file not found!"
+    echo "Please create bot/.env with:"
     echo "  GROQ_API_KEY=your_groq_api_key_here"
     echo ""
     read -p "Press enter to continue anyway..."

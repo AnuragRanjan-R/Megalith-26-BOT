@@ -99,12 +99,14 @@ If the answer is not in the context, respond exactly:
 "I don't have that information. Please contact the organizers for more details."
 
 If the question is unrelated to Megalith, respond exactly:
-"I'm here to help only with Megalith 2026 queries. Ask me about events, registration, accommodation, schedules, teams, or sponsors."
+"I'm here to help only with Megalith 2026 queries. Ask me about events, registration, teams, or sponsors."
 
 Response style:
 - Be brief (2 to 4 sentences).
 - If listing items, show a short list (max 6 items).
-- End with: "Ask me for details on any item."
+- if asked about the team dont mention any specific team or members untill asked directly.
+- If the response includes multiple items or options, you may close with a short, polite offer to provide more details.
+- Do not add a closing line if the answer is a direct factual response.
 - Use Markdown formatting. Use a table only if the user asks for a table.
 
 Context:
@@ -153,7 +155,7 @@ async def chat_endpoint(request: QueryRequest):
         
         # Search for relevant questions (with error handling)
         try:
-            results = vector_store.similarity_search(question, k=3)
+            results = await vector_store.asimilarity_search(question, k=3)
         except Exception as e:
             logger.error(f"Vector search error: {e}")
             raise HTTPException(
@@ -185,9 +187,9 @@ async def chat_endpoint(request: QueryRequest):
                 detail="Failed to process your question. Please try again."
             )
         
-        # Generate response with Groq
+        # Generate response with Groq (async for concurrent requests)
         try:
-            response = llm.invoke(prompt)
+            response = await llm.ainvoke(prompt)
             response_text = response.content if hasattr(response, 'content') else str(response)
         except Exception as e:
             logger.error(f"LLM invocation error: {e}")
@@ -221,3 +223,7 @@ async def global_exception_handler(request: Request, exc: Exception):
         status_code=500,
         content={"detail": "Internal server error"}
     )
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)

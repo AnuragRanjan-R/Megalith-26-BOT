@@ -1,36 +1,13 @@
 # ============================================
-# Megalith 2026 Backend - .gitignore
+# Megalith Chatbot - .gitignore
 # ============================================
 
 # ============================================
 # Environment Variables & Secrets
 # ============================================
 .env
-.env.local
-.env.development
-.env.production
-.env.test
-.env.*.local
-*.env
+.env.*
 !.env.example
-
-# ============================================
-# Node.js Dependencies
-# ============================================
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-.pnpm-debug.log*
-.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-.pnpm-store/
 
 # ============================================
 # Python
@@ -209,10 +186,6 @@ out/
 # Build outputs
 dist/
 build/
-*.tsbuildinfo
-
-# Docker
-.dockerignore
 
 # ============================================
 # Temporary Files
@@ -311,8 +284,3 @@ bot/data/*
 # Keep startup scripts
 !bot/start_bot.bat
 !bot/start_bot.sh
-
-# Keep Docker files
-!Dockerfile
-!bot/Dockerfile
-!docker-compose.yml

@@ -4,12 +4,15 @@ echo   Megalith Chatbot Backend Startup
 echo ========================================
 echo.
 
-REM Check if virtual environment exists
+REM Check if virtual environment exists, create if not
 if not exist "venv\Scripts\activate.bat" (
-    echo [ERROR] Virtual environment not found!
-    echo Please run: python -m venv venv
-    pause
-    exit /b 1
+    echo [SETUP] Creating virtual environment...
+    python -m venv venv
+    if errorlevel 1 (
+        echo [ERROR] Failed to create virtual environment!
+        pause
+        exit /b 1
+    )
 )
 
 REM Activate virtual environment
@@ -25,11 +28,11 @@ if errorlevel 1 (
     echo [2/4] Dependencies already installed.
 )
 
-REM Check if .env exists in parent directory
-if not exist "..\..env" (
+REM Check if .env exists
+if not exist ".env" (
     echo.
-    echo [WARNING] .env file not found in parent directory!
-    echo Please create megalith2026-backend\.env with:
+    echo [WARNING] .env file not found!
+    echo Please create bot\.env with:
     echo   GROQ_API_KEY=your_groq_api_key_here
     echo.
     pause
