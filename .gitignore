@@ -108,11 +108,6 @@ lerna-debug.log*
 # IDE & Editor Files
 # ============================================
 # VSCode
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 # IntelliJ IDEA / WebStorm / PyCharm
@@ -279,3 +274,6 @@ temp/
 # Ignore data files except the dataset
 data/*
 !data/qna_dataset.json
+temp_auto_push.bat
+temp_interactive_push.bat
+branch_structure.json
