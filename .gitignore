@@ -79,7 +79,7 @@ ipython_config.py
 # Database Files
 # ============================================
 # ChromaDB Vector Database
-bot/chroma_db/
+chroma_db/
 *.sqlite
 *.sqlite3
 *.db
@@ -276,11 +276,6 @@ temp/
 !DOCKER_SETUP.md
 !OPTIMIZATION_SUMMARY.md
 
-# Keep bot data structure (but not the actual database)
-# Keep qna_dataset.json but ignore other data files
-bot/data/*
-!bot/data/qna_dataset.json
-
-# Keep startup scripts
-!bot/start_bot.bat
-!bot/start_bot.sh
+# Ignore data files except the dataset
+data/*
+!data/qna_dataset.json
